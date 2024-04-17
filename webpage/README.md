@@ -1,0 +1,2 @@
+## Prompt ile basit bir websayfası.
+Burada sadece prompt kullanarak yapılmış basit bir websayfası bulunuyor .

@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3498db; /* Change background color to a more prominent blue */
+    display: flex;
+    flex-direction: column; /* Set flex direction to column for vertical stacking */
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around; /* Adjusted to spread out the sections */
+    align-items: center;
+    max-width: 800px; /* Adjusted for better readability */
+    width: 100%;
+    margin: auto; /* Center the container horizontally */
+    margin-top: 90px; /* Increase the distance between header and container */
+    margin-bottom: auto; /* Push footer to the bottom */
+    background-color: #ffffff; /* Set background color of the container to white */
+    border-radius: 20px; /* Add some border-radius to make it look more flexible */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    padding: 120px; /* Increase padding for a larger container */
+}
+
+
+.profile, .about {
+    flex: 1 1 50%; /* Adjusted to make both sections symmetrical */
+    padding: 20px;
+    text-align: center;
+}
+
+.profile img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #3498db;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.about p {
+    margin-top: 20px;
+}
+
+header {
+    background-color: #2980b9; /* Darker shade of blue */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer {
+    background-color: #2980b9; /* Darker shade of blue */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}

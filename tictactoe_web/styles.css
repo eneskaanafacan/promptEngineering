@@ -1,0 +1,106 @@
+/* styles.css */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #ffffff, #800000);
+  background-size: cover;
+}
+
+h1 {
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding shadow to the text */
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 10px;
+  margin-top: 20px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: #ffe6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding shadow to the squares */
+}
+
+.messages {
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding shadow to the messages */
+}
+
+.play-again {
+  background-color: #800000;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding shadow to the button */
+}
+
+.play-again:hover {
+  background-color: #a52a2a;
+}
+
+/* styles.css */
+@keyframes confetti {
+  0% {
+    opacity: 0;
+    transform: translateY(-50vh) rotateZ(0) scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(20vh) rotateZ(180deg) scale(0.8);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(200vh) rotateZ(360deg) scale(1);
+  }
+}
+
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background-color: #FFD700; /* Yellow */
+  animation: confetti 2s ease-out;
+}
+
+/* styles.css */
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.winning-message {
+  color: #ffffff;
+  font-size: 1.5em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: fade-in-out 2s ease-out;
+}
+
+
